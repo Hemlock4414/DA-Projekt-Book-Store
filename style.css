@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding:0;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header { 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    min-height: 100px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+header img {
+    width: 60px; 
+    height: auto; 
+    object-fit: cover;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.back-to-top {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    background-color: beige;
+    overflow-y: auto;
+}
+
+.main-content {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+.book-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.book-title {
+    padding: 16px;
+}
+
+.book-image {
+    max-width: 200px;
+    align-self: center;
+    margin: 20px 0;
+}
+
+.book-image img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+
+.book-info {
+    padding: 16px;
+}
+
+.book-price-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.like-number-img {
+    display: flex;
+    gap: 10px;
+}
+
+.book-likes {
+    display: flex;
+    align-items: center;
+}
+
+.book-comments {
+    padding: 16px;
+}
+
+table {
+    border-spacing: 0 10px;
+}
+
+th {
+    text-align: left;
+    display: flex;
+    align-items: start;
+    margin-right: 5px;
+}
+
+.new-comment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+input {
+    padding: 6px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.submit-comment {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    margin-left: 5px;
+    padding: 5px 8px;
+}
+
+@media (max-width: 500px) {
+    .main-content {
+        padding: 20px 0;
+    }
+    .book-content {
+        margin: 0 0;
+    }
+}
