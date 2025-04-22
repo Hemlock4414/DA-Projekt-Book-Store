@@ -126,6 +126,32 @@ hr.solid {
     align-items: center;
 }
 
+.heart-container {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.2s ease;
+}
+  
+.heart-container:hover .hover-heart {
+    display: block;
+}
+  
+.heart-container:hover .default-heart {
+    display: none;
+}
+  
+.hidden {
+    display: none;
+}
+
 .book-comments {
     padding: 16px;
 }

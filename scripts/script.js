@@ -208,3 +208,37 @@ function renderComments(bookIndex) {
     } 
   }
 }
+
+function toggleLike(bookIndex) {
+
+  if (books[bookIndex].liked == true) {
+    books[bookIndex].liked = false;
+    books[bookIndex].likes--;
+  } else {
+    books[bookIndex].liked = true;
+    books[bookIndex].likes++;
+  }
+
+  liked(bookIndex);
+  renderNumberLikes(bookIndex);
+}
+
+function liked(bookIndex) {
+  let heartElement = document.getElementsByClassName('heart-container');
+
+  if (books[bookIndex].liked == true) {
+    heartElement[bookIndex].innerHTML = `
+      <img class="heart" src="./assets/icons/heart_32.png" alt="">
+    `;
+  } else {
+    heartElement[bookIndex].innerHTML = `
+      <img class="heart" src="./assets/icons/love_32.png" alt="">
+    `;
+  }
+}
+
+function renderNumberLikes(bookIndex) {
+  let likeNumberElement = document.getElementById(`likes-count-${bookIndex}`);
+
+  likeNumberElement.innerHTML = books[bookIndex].likes;
+}
