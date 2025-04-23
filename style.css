@@ -163,6 +163,13 @@ hr.solid {
     padding: 16px;
 }
 
+.comment-scroll-area {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 2px;
+    scrollbar-width: thin;
+}
+
 table {
     border-spacing: 0 10px;
 }

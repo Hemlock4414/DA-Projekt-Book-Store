@@ -75,7 +75,7 @@ function addComment(bookIndex) {
   const userName = nameInput.value;
 
   if (commentText === '' || userName === '') {
-    alert("Bitte gib einen Namen und einen Kommentar ein.");
+    alert("Bitte gib Deinen Namen und einen Kommentar ein.");
     return;
   }
 

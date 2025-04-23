@@ -14,11 +14,15 @@ function getBooksTemplate(bookIndex) {
                 <div class="book-title">
                     <h2>${books[bookIndex].name}</h2>
                 </div>
+
                 <hr class="solid">
+
                 <div class="book-image">
                      <img src="./assets/img/book_640.png" alt="">
                 </div>
+
                 <hr class="solid">
+                
                 <div class="book-info">
                     <div class="book-price-bar">
                         <div class="book-price">${books[bookIndex].price} €</div>
@@ -48,13 +52,18 @@ function getBooksTemplate(bookIndex) {
                         </tr>
                     </table>
                 </div>
+
                 <hr class="solid">
+
                 <div class="book-comments">
+
                     <h3>Kommentare:</h3>
-                    <table id="book-comment-${bookIndex}"></table>
-                    
+                    <div class="comment-scroll-area">
+                        <table id="book-comment-${bookIndex}"></table>
+                    </div>
+
                     <div class="new-comment">
-                        <input type="text" id="comment-input-${bookIndex}" placeholder="Neuen Kommentar hinzufügen">
+                        <input type="text" id="comment-input-${bookIndex}" placeholder="Neuen Kommentar hinzufügen...">
                         <div class="submit-comment">
                             <input type="text" id="name-input-${bookIndex}" placeholder="Dein Benutzername">
                             <button onclick="addComment(${bookIndex})">Abschicken</button>
