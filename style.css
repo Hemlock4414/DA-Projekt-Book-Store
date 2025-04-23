@@ -8,6 +8,7 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -41,10 +42,16 @@ a {
 }
 
 .back-to-top {
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     font-size: 0.9rem;
     text-align: center;
+    transition: color 0.2s ease;
+}
+
+.back-to-top:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 /* Main */
@@ -75,9 +82,7 @@ h3 {
     padding-bottom: 10px;
 }
 
-hr.solid {
-    border-top: 3px solid #bbb;
-}
+/* Book Card */
 
 .book-content {
     display: flex;
@@ -100,6 +105,10 @@ hr.solid {
 
 .book-title {
     padding: 16px;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
 }
 
 .book-image {
