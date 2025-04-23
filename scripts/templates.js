@@ -27,9 +27,9 @@ function getBooksTemplate(bookIndex) {
                             <div id="likes-count-${bookIndex}" class="book-likes">${books[bookIndex].likes}</div>
                             
                             <div class="heart-container" onclick="toggleLike(${bookIndex})">
-                                <img class="heart-icon default-heart ${books[bookIndex].liked ? "hidden" : ""}" src="./assets/icons/love_32.png" alt="">
-                                <img class="heart-icon hover-heart hidden" src="./assets/icons/heart_32.png" alt="">
-                                <img class="heart-icon liked-heart ${books[bookIndex].liked ? "" : "hidden"}" src="./assets/icons/heart_32.png" alt="">
+                                <img class="heart-icon default-heart ${books[bookIndex].liked ? "d-none" : ""}" src="./assets/icons/love_32.png" alt="">
+                                <img class="heart-icon hover-heart d-none" src="./assets/icons/heart_32.png" alt="">
+                                <img class="heart-icon liked-heart ${books[bookIndex].liked ? "" : "d-none"}" src="./assets/icons/heart_32.png" alt="">
                             </div>
                         </div>    
                     </div>  
