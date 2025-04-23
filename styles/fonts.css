@@ -1,0 +1,36 @@
+/* merriweather-regular - latin */
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/merriweather/merriweather-v31-latin-regular.woff2') format('woff2'); 
+}
+/* merriweather-700 - latin */
+  @font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/merriweather/merriweather-v31-latin-700.woff2') format('woff2'); 
+}
+
+/* nunito-regular - latin */
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/nunito/nunito-v26-latin-regular.woff2') format('woff2');
+}
+/* nunito-600 - latin */
+  @font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/nunito/nunito-v26-latin-600.woff2') format('woff2');
+}
+/* nunito-700 - latin */
+  @font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/nunito/nunito-v26-latin-700.woff2') format('woff2');
+}
