@@ -66,3 +66,26 @@ function renderNumberLikes(bookIndex) {
 
   likeNumberElement.innerHTML = books[bookIndex].likes;
 }
+
+function addComment(bookIndex) {
+  const commentInput = document.getElementById(`comment-input-${bookIndex}`);
+  const nameInput = document.getElementById(`name-input-${bookIndex}`);
+
+  const commentText = commentInput.value;
+  const userName = nameInput.value;
+
+  if (commentText === '' || userName === '') {
+    alert("Bitte gib einen Namen und einen Kommentar ein.");
+    return;
+  }
+
+  books[bookIndex].comments.unshift({
+    name: userName,
+    comment: commentText
+  });
+
+  commentInput.value = '';
+  nameInput.value = '';
+
+  renderComments(bookIndex);
+}

@@ -52,11 +52,12 @@ function getBooksTemplate(bookIndex) {
                 <div class="book-comments">
                     <h3>Kommentare:</h3>
                     <table id="book-comment-${bookIndex}"></table>
-                    <div class ="new-comment">
-                        <input type="text" placeholder="Neuen Kommentar hinzufügen">
+                    
+                    <div class="new-comment">
+                        <input type="text" id="comment-input-${bookIndex}" placeholder="Neuen Kommentar hinzufügen">
                         <div class="submit-comment">
-                            <input type="text" placeholder="Dein Benutzername">
-                            <button type="submit">Abschicken</button>
+                            <input type="text" id="name-input-${bookIndex}" placeholder="Dein Benutzername">
+                            <button onclick="addComment(${bookIndex})">Abschicken</button>
                         </div>
                     </div>
                 </div>
